@@ -1,6 +1,6 @@
 LoPHP目录结构
 
-config为配置目录
+config 为配置目录
 controller
 libs
 model

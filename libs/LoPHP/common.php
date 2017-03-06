@@ -58,3 +58,29 @@ function shutdownfn(){
             "REQUEST:" . print_r( $_REQUEST, true));
     Logs::flush();
 }
+
+/**
+ * 创建默认目录
+ */
+function mkDefDir(){
+	$dirs  = array(
+			'config',
+			'controller',
+			'libs',
+			'log',
+			'model',
+			'public',
+			'public/css',
+			'public/image',
+			'public/js',
+			'public/libs',
+			'view',
+	);
+	
+	foreach($dirs as $dir){
+		if( !is_dir( APP_PATH . $dir ) ){
+			mkdir(APP_PATH . $dir);
+		}
+	}
+}
+
