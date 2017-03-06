@@ -1,6 +1,6 @@
-LoPHPĿ¼�ṹ
+LoPHP目录结构
 
-config Ϊ����Ŀ¼
+config 为配置目录
 controller
 libs
 model
